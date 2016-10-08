@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style>
+            body {
+                background: #000;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            button {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                transition: background-color 0.5s ease, box-shadow 1s ease;
+                width: 250px;
+                height: 250px;
+                display: inline-block;
+                float: left;
+                outline: none;
+                cursor: pointer;
+                z-index: 100;
+                background: #873012;
+                border-radius: 250px;
+                border: 0;
+                box-shadow: inset 2px 10px 0px -1px rgba(0,0,0,0.2);
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 24px;
+                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            }
+
+            button:active {
+                background: #f1511b;
+                box-shadow: none;
+                z-index: 50;
+            }
+        </style>
+        <title>En Français</title>
+    </head>
+    <body>
+        <script>
+            function playFart() {
+                var fart = document.getElementById('fart');
+                fart.currentTime = 0;
+                fart.play();
+            }
+        </script>
+        <audio id="fart">
+            <source src="nerrrrrd.wav" type="audio/wav">
+        </audio>
+        <button onclick="playFart()">NERRRRRRRD</button>
+    </body>
+</html>
